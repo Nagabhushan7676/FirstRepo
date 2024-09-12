@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        
+        <div id="navlist">
+            <a class="name">
+                <span class="name">WEATHER APP</span>
+            </a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <div class="search">
+            <form action="#">
+                <input type="text" id="city"
+                    placeholder=" Search City"
+                    name="search">
+                <button 
+                style="font-size: 18px;" type="submit" id="submit">
+                   search
+                     </button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="head">
+        <h1>WEATHER OF <span id="cityName"></span></h1>
+    </div>
+    <div class="container">
+    <div class="cont1">
+        <p><h3 id="temperature">TEMPERATURE <br><span id="temp"></span><span>&#8451;</span><br><hr>MAXTEMP <br><span id="max-temp"></span>&#8451;<br><hr>MINTEMP <br><span id="min-temp"></span>&#8451;<br><hr><br><span id="weather-type"></span><span></span><br><hr></h3>
+            <br>
+    </p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
