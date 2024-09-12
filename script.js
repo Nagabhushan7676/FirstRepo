@@ -59,7 +59,8 @@ showWeatherData = (weatherData) => {
     })
     
 const searchCity=async()=>{
-     let response=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&APPID=71f6779186cc32448b4c412eea65b982&units=metric`)
+     let response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&APPID=71f6779186cc32448b4c412eea65b982&units=metric`)
      let data=await response.json()
+     console.log(data)
      showWeatherData(data)
 }
